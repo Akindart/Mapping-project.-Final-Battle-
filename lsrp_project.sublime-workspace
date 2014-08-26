@@ -1,0 +1,1047 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"pu",
+				"publishMessage"
+			],
+			[
+				"tr",
+				"trans"
+			],
+			[
+				"p_",
+				"p_set1"
+			],
+			[
+				"new",
+				"new_msg"
+			],
+			[
+				"poi",
+				"pointAlignenment"
+			],
+			[
+				"p",
+				"pointAlignerLoop"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"com",
+				"comparisonSet"
+			],
+			[
+				"se",
+				"setEigenVec2"
+			],
+			[
+				"set",
+				"setEigenVec1"
+			],
+			[
+				"temp",
+				"tempVec"
+			],
+			[
+				"a",
+				"at"
+			],
+			[
+				"P",
+				"p_set1"
+			],
+			[
+				"trn",
+				"transformation"
+			],
+			[
+				"sen",
+				"setEigenVec2"
+			],
+			[
+				"lis",
+				"listVec2fIterator"
+			],
+			[
+				"setEi",
+				"setEigenVec1"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"res",
+				"resize"
+			],
+			[
+				"p_s",
+				"p_set1"
+			],
+			[
+				"Vet",
+				"Vector3f"
+			],
+			[
+				"ms",
+				"msg"
+			],
+			[
+				"o",
+				"ofstream"
+			],
+			[
+				"pos",
+				"posInVec"
+			],
+			[
+				"po",
+				"posInVec"
+			],
+			[
+				"ei",
+				"eingenValues2"
+			],
+			[
+				"le",
+				"listVec2f"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"Tr",
+				"TransformListener"
+			],
+			[
+				"l",
+				"listener"
+			],
+			[
+				"ROS",
+				"ROS_INFO"
+			],
+			[
+				"out",
+				"outPutFile"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"vt",
+				"v2tRad"
+			],
+			[
+				"ma",
+				"Matrix3f"
+			],
+			[
+				"X",
+				"X_ideal"
+			],
+			[
+				"Vec",
+				"Vector3f"
+			],
+			[
+				"co",
+				"cols"
+			],
+			[
+				"Ma",
+				"MatrixXf"
+			],
+			[
+				"Matri",
+				"Matrix3f"
+			],
+			[
+				"xNew",
+				"xNew"
+			],
+			[
+				"xNe",
+				"xNew"
+			],
+			[
+				"pon",
+				"pointAlignerIteration"
+			],
+			[
+				"xne",
+				"xNew_chi"
+			],
+			[
+				"x",
+				"x"
+			],
+			[
+				"Vector",
+				"Vector3f"
+			],
+			[
+				"comp",
+				"computeJacobian"
+			],
+			[
+				"Matrix",
+				"Matrix3f"
+			],
+			[
+				"Vecto",
+				"Vector4f"
+			],
+			[
+				"J",
+				"Jacobian"
+			],
+			[
+				"veco",
+				"Vector2f"
+			],
+			[
+				"norm",
+				"normal_msg"
+			],
+			[
+				"no",
+				"normals_"
+			],
+			[
+				"eigen",
+				"eigenvalues"
+			],
+			[
+				"msg",
+				"msg"
+			],
+			[
+				"normal",
+				"normal_msg"
+			],
+			[
+				"norma",
+				"normals_"
+			],
+			[
+				"vect",
+				"Vector2f"
+			],
+			[
+				"ve",
+				"Vector2f"
+			],
+			[
+				"im",
+				"image"
+			],
+			[
+				"cv_",
+				"cv_ptr"
+			],
+			[
+				"i",
+				"image"
+			],
+			[
+				"cv",
+				"cv_ptr"
+			],
+			[
+				"e",
+				"image_encodings"
+			],
+			[
+				"virtual",
+				"virtual_laser_scan"
+			],
+			[
+				"virtua",
+				"virtual_laser_scan"
+			],
+			[
+				"vir",
+				"virtual_laser_scan"
+			],
+			[
+				"vi",
+				"virtual_laser_scan"
+			],
+			[
+				"bui",
+				"build_depend"
+			],
+			[
+				"sub",
+				"Subscriber"
+			],
+			[
+				"k",
+				"k_neighborhood"
+			],
+			[
+				"min",
+				"min_depth"
+			],
+			[
+				"m",
+				"min_depth"
+			],
+			[
+				"vecto",
+				"Vector3f"
+			],
+			[
+				"came",
+				"camera_matrix"
+			],
+			[
+				"ac",
+				"action_params"
+			],
+			[
+				"s",
+				"sv"
+			],
+			[
+				"gene",
+				"generate_normals"
+			],
+			[
+				"non",
+				"node_handler"
+			],
+			[
+				"li",
+				"listOfPointInScan"
+			],
+			[
+				"an",
+				"angle_step"
+			],
+			[
+				"vec",
+				"Vector3f"
+			],
+			[
+				"ca",
+				"calCovMat"
+			],
+			[
+				"generate_n",
+				"generate_virtual_scan"
+			],
+			[
+				"scan",
+				"virtual_scan"
+			],
+			[
+				"Scan_v",
+				"Scan_virtualizer"
+			],
+			[
+				"do",
+				"double"
+			],
+			[
+				"max",
+				"max_depth"
+			],
+			[
+				"dep",
+				"depth_image"
+			],
+			[
+				"ne",
+				"nextTask"
+			],
+			[
+				"tem",
+				"tempTask"
+			],
+			[
+				"cure",
+				"currentTask"
+			],
+			[
+				"dis",
+				"distance2"
+			],
+			[
+				"dsi",
+				"distance2"
+			],
+			[
+				"get",
+				"getPosition"
+			],
+			[
+				"distance",
+				"distance1"
+			],
+			[
+				"man",
+				"manhatenDistance"
+			],
+			[
+				"ge",
+				"getPosition"
+			],
+			[
+				"getP",
+				"getPosition"
+			],
+			[
+				"nex",
+				"nextTask"
+			],
+			[
+				"lo",
+				"lowestCostTask"
+			],
+			[
+				"na",
+				"nextTask"
+			],
+			[
+				"pe",
+				"pendingTasks"
+			],
+			[
+				"toT",
+				"toString"
+			],
+			[
+				"ag",
+				"agTask"
+			],
+			[
+				"cu",
+				"currentAgent"
+			],
+			[
+				"mni",
+				"minDistance"
+			],
+			[
+				"current",
+				"currentTask"
+			],
+			[
+				"is",
+				"isEmpty"
+			],
+			[
+				"TEMP",
+				"tempPendingTasks"
+			],
+			[
+				"IS",
+				"isTaskAcceptedBySomeAgent"
+			],
+			[
+				"tempB",
+				"tempBidList"
+			],
+			[
+				"pendin",
+				"pendingTasks"
+			],
+			[
+				"pen",
+				"pendingTasks"
+			],
+			[
+				"In",
+				"Integer"
+			],
+			[
+				"A",
+				"Action"
+			],
+			[
+				"n",
+				"null"
+			],
+			[
+				"nes",
+				"nextTask"
+			],
+			[
+				"curre",
+				"currentTask"
+			],
+			[
+				"Poin",
+				"PointXYZ"
+			],
+			[
+				"PointClo",
+				"PointCloud"
+			],
+			[
+				"cha",
+				"chatterCallback"
+			],
+			[
+				"ch",
+				"chatterCallback"
+			],
+			[
+				"v",
+				"velo_y"
+			],
+			[
+				"has",
+				"has_velo_y"
+			],
+			[
+				"has_velo",
+				"has_velo_x"
+			],
+			[
+				"velo",
+				"velo_y"
+			],
+			[
+				"O",
+				"IdObjA"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/align_pack/aligner.cpp",
+			"settings":
+			{
+				"buffer_size": 5953,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Relatório Capes\n\n--Introdução\n\nO programa de Intercâmbio Ciência sem Fronteiras edital Itália 2013/2014 do qual esse que vos escreve participou terminou oficialmente dia primeiro de agosto de 2014 e agora venho por meio deste documento relatar minhas experiências e atividades na Universidade italiana \"La Sapienza\" Università di Roma. A estrutura deste documento será dividida baseada nos dois semestres que frenquentei na dita universidade, e de acordo com as disciplinas cursadas.\n\nA Seção 2 lidará com as disciplinas cursadas no primeiro semestre e a Seção 3 discorrerá sobre o segundo semestre. Por fim, a Seção 4 é a Conclusão a respeito de todo o período discutido previamente.\n\n--Seção 2: Primeiro Semestre\n\n",
+			"settings":
+			{
+				"buffer_size": 716,
+				"line_ending": "Unix",
+				"name": "Relatório Capes"
+			}
+		},
+		{
+			"file": "src/normal_pack/normals.cpp",
+			"settings":
+			{
+				"buffer_size": 5123,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/spades/normals/normals.dat",
+			"settings":
+			{
+				"buffer_size": 33905441,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/User/rosCatkinBuild.sublime-build",
+	"command_palette":
+	{
+		"height": 352.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Build: Build"
+			],
+			[
+				"plu	",
+				"Preferences: Settings - Default"
+			]
+		],
+		"width": 352.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/align_pack/utils.cpp",
+		"/home/spades/Desktop/+33 (0) 650 84 49 04",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/normal_pack/normals.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/normal_pack/normals_generator.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/xtion_virtual_scans/scan_virtualizer.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/msg/pointAlignment.msg",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/xtion_virtual_scans/xtion_virtual_scan.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/align_pack/aligner.cpp",
+		"/home/spades/normals.dat",
+		"/home/spades/groovy_ws/sandbox/transAndSensors/src/laserOdomTrans.cpp",
+		"/home/spades/groovy_ws/sandbox/transAndSensors/src/laserOdomTransformer.cpp",
+		"/home/spades/Desktop/teste.dat",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/CMakeLists.txt",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/msg/normals_.msg",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/align_pack/align_main.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/normals.cpp",
+		"/home/spades/.bashrc",
+		"/home/spades/groovy_ws/sandbox/actionHw/src/actionClientHw.cpp",
+		"/home/spades/groovy_ws/sandbox/actionHw/src/actionServerHw.cpp",
+		"/home/spades/groovy_ws/sandbox/rp_actions/nodes/myPnPas.cpp",
+		"/home/spades/hydro_ws/devel/lib/least_squares_rp_project/aligner",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/normals_generator.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/src/point_aligner.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/CMakeLists.txt.user",
+		"/home/spades/qt_ws/SimulationFile.txt",
+		"/home/spades/workspace/ML_Hw3/src/Ml_hw3_main.java",
+		"/home/spades/hydro_ws/src/opencv_pcl_hw/src/pcl_test.cpp",
+		"/home/spades/qt_ws/ql_project/QLearning/main.cpp",
+		"/home/spades/qt_ws/aniProj/anisrc/testAnimation/testQt.qlf",
+		"/home/spades/qt_ws/ql_project/QLearning/SimulationFile_2.txt",
+		"/home/spades/qt_ws/ql_project/QLearning/SimulationFile.txt",
+		"/home/spades/workspace/ML_Hw3/src/bloomberg_corpus/bloomberg_news_classification_corpus.csv",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/package.xml",
+		"/home/spades/hydro_ws/build/least_squares_rp_project/CATKIN_IGNORE",
+		"/home/spades/hydro_ws/src/opencv_pcl_hw/CMakeLists.txt",
+		"/home/spades/Documents/Sapienza/AI_2/Prob/READEME.txt",
+		"/home/spades/Desktop/msgCAPES.txt",
+		"/home/spades/Documents/Sapienza/AI_2/meta_intepreter.pl",
+		"/home/spades/Downloads/QLearning/TestFile.txt",
+		"/home/spades/Qt5.2.1/Tools/QtCreator/bin/qtcreator.sh",
+		"/home/spades/hydro_ws/build/least_squares_rp_project/least_squares_rp_project.cbp",
+		"/usr/home/.bashrc",
+		"/home/spades/Documents/Sapienza/AI_2/hwNonMonotonicReasoning.pl",
+		"/home/spades/hydro_ws/src/opencv_pcl_hw/rscr/dataset-kinect/depth_258.pgm",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/lsrp_project.sublime-project",
+		"/home/spades/groovy_ws/sandbox/rp_actions/CMakeLists.txt",
+		"/home/spades/groovy_ws/sandbox/rp_actions/nodes/turn.cpp",
+		"/home/spades/groovy_ws/sandbox/rp_actions/launch/robot_0_plan.launch",
+		"/home/spades/groovy_ws/sandbox/PNPros/include/PNPros/PNPActionServer.h",
+		"/home/spades/groovy_ws/sandbox/PNPros/src/PNPActionServer.cpp",
+		"/home/spades/groovy_ws/sandbox/rp_actions/README.txt",
+		"/home/spades/groovy_ws/sandbox/rp_actions/bin/turn",
+		"/home/spades/groovy_ws/sandbox/rp_actions/nodes/MyPNPAS.cpp",
+		"/home/spades/groovy_ws/sandbox/rp_actions/manifest.xml",
+		"/home/spades/groovy_ws/sandbox/rp_actions/mainpage.dox",
+		"/home/spades/Documents/Sapienza/RobotProgramming/rp_actions/mainpage.dox",
+		"/home/spades/Documents/Sapienza/RobotProgramming/rp_actions/scripts/run-dis-B1.sh",
+		"/home/spades/Documents/Sapienza/RobotProgramming/rp_actions/nodes/turn.cpp",
+		"/home/spades/groovy_ws/sandbox/PNPros/src/ROSInst.h",
+		"/home/spades/groovy_ws/sandbox/PNPros/src/ROSInst.cpp",
+		"/home/spades/Documents/Sapienza/RobotProgramming/rp_actions/nodes/MyPNPAS.cpp",
+		"/home/spades/hydro_ws/src/least_squares_rp_project/msg/virtual_scan.msg",
+		"/home/spades/hydro_ws/src/beginner_tutorials/src/listener.cpp",
+		"/home/spades/hydro_ws/devel/lib/beginner_tutorials/listener",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/hw/exercise1/Agent.java",
+		"/usr/local/include/eigen3/Eigen/Dense",
+		"/home/spades/Downloads/eigen-eigen-ffa86ffb5570/CMakeLists.txt",
+		"/home/spades/hydro_ws/src/opencv_pcl_hw/src/opencvPCL.cpp",
+		"/home/spades/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/spades/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/simulator/simulator/multiagent/WorldPanel.java",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/simulator/simulator/multiagent/Location.java",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/dissertativeAnswers.txt",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/simulator/simulator/multiagent/Agent.java",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/config/myconfig.cfg",
+		"/home/spades/workspace/PlotMachine/src/PlotMachine/DSAresults",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/config/example.cfg",
+		"/home/spades/workspace/PlotMachine/src/PlotMachine/maxSumResults",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/49a29a0c-bf6a-4ca6-9623-c40c76c2a65a-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/27b9c889-0551-46e6-9df8-fa29af6e10ef-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/88a5dc06-96f7-4daf-85c7-895ed019c0f4-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/264d354f-4cc2-48ca-8a4e-188ef1050fa4-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/d0fc1eb9-6d1c-45ec-9e3b-bf8c0eb093c5-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/4e608abe-f213-4e4d-9a4e-98b9decf171e-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/e2dde6a5-4a4e-46ff-a3b4-f52748bc8420-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/8632e184-2c86-4180-b9e6-a49818888edd-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/0914161a-e7dc-4080-b277-52d1e9d098e9-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/d6a3cc4c-c60d-41c4-b919-b687f1154c16-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/7a410c54-6201-4640-a29d-eae946455705-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/3453326a-721e-40d5-ac7a-d1d8391ec76f-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/cf997f7f-5366-4dd2-bdaa-fc103d7d4a06-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/bd9ff5a9-a629-4718-9e39-665757f99eff-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/9e7bf326-a660-4f7d-83ac-8241cb8508a1-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/cc8e5579-73ca-46e8-800a-9b2bae6568a8-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/977e6f57-563e-4ce4-bdc9-39c432ccc2fd-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/fdfaff16-74f3-4143-a004-51cf1b283a21-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/58b56dc3-bc6b-4004-b66b-2046bec37c2f-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/0a09fff6-1442-4a43-8db8-c2a6666a99a5-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/280e744b-ea48-46d3-8b7e-0ae99e225dfe-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/b23aa1a1-c05a-42d5-a375-8a9f2522ac8f-DSA.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/10f269ef-9a7a-4de9-9eed-ccd9ba24f01b-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/f0ee4e6f-633e-4271-b3c0-0a3d3e8a282c-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/65d1f4c1-5876-4c60-9c9d-f8493888565e-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/b13b5793-ad79-4693-96df-bbc3dfde96b8-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/374d80ae-1447-46ef-9910-f10a20bfc836-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/a3c43e37-7504-464d-92b8-bb175d465800-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/7e9c8237-0bf6-4531-b6d9-a2487602c046-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/db9b73a7-dd9e-445a-b1b7-49ddb6eea692-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/713e552d-18a9-4065-8df3-a6f968d0e0a0-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/510b87f9-13fc-4fe1-b2ee-17f15b3339dd-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/27a7a227-d610-4eab-8537-3b84628406a9-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/2eeab5c2-9a47-49fc-8a80-e6456b0a3749-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/48cdf5ac-42e6-4c80-86de-e94747514266-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/d96c0d12-27fa-4967-a187-d321787b6b11-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/47cdd3ea-7ad5-483d-a11c-6b5d64dc03b3-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/f47d97c2-1928-482c-b549-d44b7ce33de9-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/e4837bc1-0650-466f-bfba-5ae86bc7feab-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/3702dcf9-e17e-43ae-b7ca-72e6e0ccce9a-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/2010f394-a2f1-4f21-bc65-94bb8525770d-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/c1ba2b92-10d0-44cf-9e42-339c1d4d465e-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/fe1d9c1f-440a-4225-8592-7613cf1f4fe2-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/95de70d0-2903-4a40-a560-ac3aec187fba-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/5fb3dd3c-42b1-4ec6-b61d-730b70659e9b-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/e87bad66-cedc-4362-93ca-6200108585fb-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/2476f3a7-467d-4208-8402-acfb3ea19649-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/4f61c539-41f5-4503-950f-8ef5379022f0-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/9d0627c6-e5c9-485d-921d-dfe66d113bbc-BinaryMaxSum.dat",
+		"/home/spades/Documents/Sapienza/AI_2/MAS/RMASBench/RSLB2/boot/results/ad6527af-a75a-4ebe-a55f-564246db2c38-BinaryMaxSum.dat"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"free",
+			"test5",
+			"printTrans",
+			"endl",
+			"v2t",
+			");\"",
+			"virtual",
+			"\n",
+			"devel",
+			"toCvcOPY",
+			");\n",
+			"\"odom\"",
+			"parent_frame",
+			"vector",
+			"pub",
+			"calCovMat",
+			"0.001",
+			"listVec2f",
+			"global_PNPROS_action_fns",
+			"get_action_fn",
+			"UNknown",
+			"UN",
+			"UNKNOWN\n",
+			"));\n",
+			"advertise",
+			";\n",
+			"VirtualScan",
+			"virtual_scan",
+			"catkin_pack",
+			"/usr",
+			"/u",
+			"/usr/include",
+			"g++",
+			"compiler",
+			"compi",
+			"gcc",
+			"GC",
+			"gcc",
+			"true",
+			"manhatenDistance",
+			" manhatanDistace",
+			"manhatanDistace2",
+			"manhatanDistace1",
+			"minManhatanDistace",
+			"MAX",
+			"this",
+			"accept",
+			"add",
+			"abs",
+			"multiagent",
+			"addp",
+			"add",
+			"add\\",
+			"addp",
+			"accept",
+			"maxBid",
+			"bid",
+			"doOne",
+			"do",
+			"equals",
+			"update",
+			"up",
+			"updateState",
+			"update",
+			"viewer",
+			"xtion",
+			",",
+			":",
+			"eat-banana",
+			"take-down-banana",
+			"grasp-banana",
+			"move-box",
+			"letgo",
+			"on",
+			"have",
+			"climb-down",
+			"climb-up",
+			"drop",
+			"go",
+			"test",
+			"ori",
+			"ori_ma",
+			"spp",
+			"exists",
+			"		\n",
+			"beyond",
+			"corridor_window20140319115104",
+			"GroundList1",
+			" '",
+			"),\n",
+			"(is)",
+			"is",
+			"tex"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/align_pack/aligner.cpp",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5953,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 716,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								716,
+								716
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Relatório Capes",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/normal_pack/normals.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/home/spades/normals/normals.dat",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 33905441,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 436.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "lsrp_project.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 249.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

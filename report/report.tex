@@ -1,0 +1,182 @@
+\documentclass[10pt,a4paper,final]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathptmx}
+\usepackage{anyfontsize}
+\usepackage{t1enc}
+\usepackage{listings}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Pedro Daniel de Cerqueira Gava \\ pedrodanieldecerqueiragava@gmail.com}
+\title{Report for "Robot Programming" and "Least Squares and SLAM"}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\chapter{Robot Programming}
+
+\section{Introduction}
+
+In this chapter its covered the aspects of the implementation of the nodes responsible for transform a input depth map into a virtual laser scan and the normals of its points which will be used for calculate the transformation between scans. In order to perform this task the project is divided in three modules: virtual scans; normals pack; align pack; All of it develop using the libraries of ROS(Robot Operational System).
+
+\section{Virtual scan}
+
+This part of the project deals with the transformation of a line of the depth image into a simulated laser scan. This process is started receiving the input image and transforming it to a format that is possible to work 
+with OpenCV, once that it comes as a \textit{const sensor\_msgs::ImageConstPtr } type.
+
+Using \textit{cv\_bridge}, the image is transformed to an OpenCV "handable" with enconding 16UC1 and putting the depth values in meters. The scan is basically the depth values of the middle line of the image, by the way, to pick the correct values, we have to transform these values into values written in respect to the camera frame and not the image frame.
+
+First things first, the scan message that this node will send is composed mainly by the range values and the angles between this values. Also there are the fields for max and minimum range to be considered when reading that message. To give the information about the angle step between beams, one can calculate it as:
+
+\begin{equation}
+angle\_step = \frac{horizontal \ angular \ field \ of \ view \ of \ the \ camera}{number \ of \ pixels \ in \ a \ row \ of \ the \ image}
+\end{equation}
+
+Range values are obtained through transforming the points of line that is being used as base for the virtual laser scan from the image frame to the camera frame, but to do that, one only need to compute $y^{camera frame}$, because the matrix of the transformation from the image frame to the camera frame is given as:
+
+\begin{equation}
+M=
+  \begin{pmatrix}
+    0 & 0 & 1 & \alpha\\
+    -1 & 0 & 0 & \beta\\
+    0 & -1 & 0 & \gamma\\
+    0 & 0 & 0 & 1\\
+  \end{pmatrix}
+\end{equation}
+
+Where $\alpha, \beta, \gamma$ are considered zero in this case to make computation easy and the angle of the beam is given in respect of the x axis of the laser frame, in this case the x axis of the camera frame.  There for we compute:
+
+\begin{equation}
+y^{camera \ frame} = - \frac{(principal \ point_{x} - x^{image \ frame})depth_{(x, y)^{image \ frame}}}{focal \ lenght}
+\end{equation}
+
+\begin{equation}
+x^{camera \ frame} = depth
+\end{equation}
+
+Where $x^{image \ frame}$ and $y^{image \ frame}$ are pixels and $x^{camera \ frame}$ and $y^{camera \ frame}$ are in meters. Now we compute the range of the beam of a point $(x, y)^{camera \ frame}$ as:
+
+\begin{equation}
+beam \ range = \sqrt{(x^{camera \ frame})^2 + (y^{camera \ frame})^2 } 
+\end{equation}
+
+Max and minimum in is according to the programmer, in this project 13 and 0.04 were used respectively.
+
+Also, it is necessary to set the maximum and minimum laser angle, this is, whats the angle interval of the scan:
+
+\begin{equation}
+maximum \ angle = \frac{0.5.horizoltal \ field \ of  \ view. \pi}{180}
+\end{equation} 
+
+\begin{equation}
+minimum \ angle = - maximum \ angle
+\end{equation}
+
+The times between each beam is considered zero because it is considered that all the ranges are coming at the same time.
+
+This whole process make possible to create a virtual laser scan with number of ranges equal to the width of the image, and once the message is publish the next step is to compute the normals of that set of ranges.
+
+\section{Normals computation}
+
+This part shows the computation done in order to obtain the normals of the points obtained from the laser.
+
+First, the points are computed using the following equations:
+
+\begin{equation}
+x_{i}^{camra \ frame} = range_{i}.cos(angle \ max - i.angle \ increment)
+\end{equation}
+
+\begin{equation}
+y_{i}^{camra \ frame} = range_{i}.sin(angle \ max - i.angle \ increment)
+\end{equation}
+
+Where the index $i$ denotes the i-th beam to be used, starting from the beam with maximum angle.
+
+And than the scan is written in respect to the a fixed point in the world to allow comparison between two sets of points in the next chapter. This transformation is done through  \textit{/tf::TransformListener::transformPoint}.
+
+The normals are computed using eigenvalues and eigenvector obtained from the covariance matrix of the point and its neighbors as follows:
+
+\begin{equation}
+C = \sum_{i=1}^{k}(c - p_{i})(c - p_{i})^T
+\end{equation}
+
+Where $C$ is the covariance matrix, $k$ is the number of neighbors of the point which the normal is being computed and $c$ is the centroid of that set of points.
+
+Taking the eigenvectors corresponding to the lowest eigenvalue of a $C_{i}$ we obtain the normal of point $p_{i}$.
+
+The points and their respective normals are published in order to be used by the node presented in the next chapter.
+
+\chapter{Least Squares and point Alignment}
+
+\section{Introduction}
+
+This chapter will show the equations and decision made in order to calculate approximately the transformation needed to align two set of points which are coming already with their normals.
+The method used to calculate it is the least squares approach where the parameter to set small as possible is the computed error between two sets. Also, here we're not dealing with a set that has all points with correspondence in the other set of points, and for that we need the normals. We will use the normals and Cartesian distance to create this correlations.
+
+\section{Definitions}
+
+First of all we shall decide the appearance of the state representing this transformation, and in this case we will use a 3D vector which represents a transformation matrix, \textbf{$v = [x, y, \theta]^T$}.
+
+Next, the increment is defined as:
+
+\begin{equation}
+v' = v + \Delta v
+\end{equation}
+
+And fixing $\theta$ with, 
+
+\begin{equation}
+\theta ' = atan2(sin(v_{x}'), cos(v_{y}'));
+\end{equation}
+
+
+The error is computed with a $\boxminus$:
+
+\begin{equation}
+\textit{e}_{i} = p_{i} \boxminus p_{j}
+\end{equation}
+
+\begin{equation}
+\textit{e}_{i} = X*p_{i} - p_{j}
+\end{equation}
+
+Where $p_{i}$ and $p_{j}$ represent respectively the point from the set that is being used as reference and the point of the set who is being aligned to the previous one. With increment and $\boxminus$ defined now we can define explicitly the Jacobian:
+
+\begin{equation}
+Jacobian = \begin{pmatrix}
+1 & 0 & -sin\theta p_{i, x} - cos\theta p_{i, y}\\
+0 & 1 & cos\theta p_{i, x} - sin\theta p_{i, y}\\
+\end{pmatrix}
+\end{equation}
+
+One can pay attention that the last column represents the derivative of the rotation matrix of the actual state estimation multiplied by the point from the reference set $p_{i}$.
+
+The algorithm is done in way that it minimizes the error of the transformation iterating through the estimations, in other words, every time the the least square part finishes with an approximation, the algorithm uses this as a new guess to obtain a refined estimation. In this project, the number of iterations is according to the number of measurements in the measurement matrix $Z$.
+
+In order to obtain the measurement matrix $Z$, the node responsible for the point alignment receives the message coming from the normal package with the set of points and their normals and use them to find correlations between the points of both sets. The structure of $Z$ is as follows:
+
+\begin{equation}
+Z = \begin{pmatrix}
+p_{1, reference \ set} & p_{2, reference \ set} & ... & p_{n, reference \ set} \\
+p_{1, set\ to \ be \ aligned} & p_{2, set\ to \ be \ aligned} & ... & p_{n, set\ to \ be \ aligned}
+\end{pmatrix}
+\end{equation}
+
+The correlations are find first looking the distance between points from both sets, once two poinst of each set have euclidean distance lower than a threshold, it is verified if their normals have an angle lower than a certain threshold. Another thing is that the sequence of points are being taken sequentially, the transform resulting from it can be turned into non presentable values due to its littleness, in those cases the program will consider it as zero.
+
+The $H$ and $b$ are computed using and identity matrix of $\Omega$.
+
+\begin{equation}
+H = Jacobian^T*\Omega*Jacobian
+\end{equation}
+
+\begin{equation}
+b = Jacobian^T*\Omega*e
+\end{equation}
+
+
+\end{document}
