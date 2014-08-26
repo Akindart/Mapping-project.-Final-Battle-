@@ -169,6 +169,10 @@ class Aligner{
 					//cout << "test10" << endl;
 					(*comparisonSet)(3, compSetCounter-1) = (*p_set2)(1, posInVec);
 
+
+					//usedVecs.add(Vector2f((*p_set2)(0, posInVec), (*p_set2)(1, posInVec))); <<-- do it right!	
+					//create the pair here!
+
 				}
 			
 			}
