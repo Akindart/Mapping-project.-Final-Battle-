@@ -1,0 +1,9 @@
+<launch>
+
+
+<node pkg="least_squares_rp_project" name="depth_to_laser_node" type="xtion_virtual_scan" output="screen"/>
+<node pkg="least_squares_rp_project" name="normal_generator" type="normals_generator" output="screen"/>
+<node pkg="least_squares_rp_project" name="aligner" type="aligner" output="screen"/>
+
+
+</launch>
