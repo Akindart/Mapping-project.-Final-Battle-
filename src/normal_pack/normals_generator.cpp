@@ -11,7 +11,7 @@
 
 int main(int argc, char* argv[]){
 
-	ros::init(argc, argv, "point_aligner");
+	ros::init(argc, argv, "normal_generator");
 
 	ros::NodeHandle *node_handler = new ros::NodeHandle();
 

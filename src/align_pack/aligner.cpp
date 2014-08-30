@@ -2,7 +2,7 @@
 
 #include <fstream>
 #include <iostream>
-
+#include <algorithm>
 
 #ifndef ALIGNER_H
 #define ALIGNER_H
@@ -32,8 +32,6 @@ class Aligner{
 	listVec2f setEigenVec1;
 
 	listVec2f setEigenVec2;
-
-	listVec2f usedVecs;
 
 	MatrixXf *extractPointInfo(const least_squares_rp_project::normals_ msg,  std::vector<float> *eingenValues, listVec2f *tempVecList){
 
@@ -71,6 +69,9 @@ class Aligner{
 		float minDist = -1;
 		int posInVec;
 
+		listVec2f usedVecs;
+
+		listVec2f::iterator it = usedVecs.end();
 
 		for(int i=0; i<p_set1->cols(); i++){
 
@@ -78,10 +79,8 @@ class Aligner{
 			x1 = (*p_set1)(0, i);
 			y1 = (*p_set1)(1, i);
 
-			//ROS_ERROR("set 1");
-
-			if(!usedVecs.empty()) usedVecs.clear(); 
-
+			ROS_ERROR("set 1");
+			
 			for(int j=0; j<p_set2->cols(); j++){
 
 				minDist = -1;
@@ -90,7 +89,7 @@ class Aligner{
 				x2 = (*p_set2)(0, j);
 				y2 = (*p_set2)(1, j);
 
-				//ROS_ERROR("set 2");
+				ROS_ERROR("set 2");
 
 				if(sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1)) < 0.3){
 
@@ -103,28 +102,35 @@ class Aligner{
 
 					else if(sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1)) < minDist){ //here Ill put the verification for the fact that if the point of set_2 is already
 																						//paired with some other point of set_1
-					 	minDist = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
+						minDist = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1));
 						posInVec = j;
 
 					}
 
 					//cout << "two possible equal points: (" << x1 << ", " << y1 << ") - " << "(" << x2<< ", " << y2 << ")" << endl;
-
+					cout << "j: " << j << " p_set2->cols(): " << p_set2->cols() << endl;
 				}
 
 			}
 
-			if(posInVec > -1 && posInVec < p_set2->cols()){
-			
+
+			//it = std::find (usedVecs.begin(), usedVecs.end(), p_set2->col(posInVec));
+
+
+			if(posInVec > -1 && posInVec < p_set2->cols() && it == usedVecs.end()){
+				
+
+
 				//ROS_INFO("tetetetetetetet -- %d \\ Eigen vec cols: %d \\  p-set1 size: %d", i, setEigenVec1.size(), p_set1->cols());
 
 				//cout << "setEigenVec1.at(i): \n" << setEigenVec1.at(i) << endl;
 
-				float cos_ = setEigenVec1.at(i).dot(setEigenVec2.at(posInVec))/ (sqrt(setEigenVec1.at(i)(0,0)*setEigenVec1.at(i)(0,0) + setEigenVec1.at(i)(1,0)*setEigenVec1.at(i)(1,0) )*
+				/*float cos_ = setEigenVec1.at(i).dot(setEigenVec2.at(posInVec))/ (sqrt(setEigenVec1.at(i)(0,0)*setEigenVec1.at(i)(0,0) + setEigenVec1.at(i)(1,0)*setEigenVec1.at(i)(1,0) )*
 																							sqrt(setEigenVec2.at(posInVec)(0,0)*setEigenVec2.at(posInVec)(0,0) + 
-																								setEigenVec2.at(posInVec)(1,0)*setEigenVec2.at(posInVec)(1,0)));
+																								setEigenVec2.at(posInVec)(1,0)*setEigenVec2.at(posInVec)(1,0)));*/
 
-				
+				float cos_ = setEigenVec1.at(i).dot(setEigenVec2.at(posInVec))/ (sqrt(setEigenVec1.at(i).dot(setEigenVec1.at(i)))*
+																										sqrt(setEigenVec2.at(posInVec).dot(setEigenVec2.at(posInVec))));
 
 				if(acos(cos_) < 0.0002){
 
@@ -166,11 +172,14 @@ class Aligner{
 					(*comparisonSet)(1, compSetCounter-1) = (*p_set1)(1, i);
 					//cout << "test9" << endl;
 					(*comparisonSet)(2, compSetCounter-1) = (*p_set2)(0, posInVec);
-					//cout << "test10" << endl;
+					cout << "test10" << endl;
 					(*comparisonSet)(3, compSetCounter-1) = (*p_set2)(1, posInVec);
 
 
-					//usedVecs.add(Vector2f((*p_set2)(0, posInVec), (*p_set2)(1, posInVec))); <<-- do it right!	
+					usedVecs.push_back(Vector2f((*p_set2)(0, posInVec), (*p_set2)(1, posInVec)));  //<--the error is here
+
+					cout << usedVecs.at(usedVecs.size()-1) << endl;
+
 					//create the pair here!
 
 				}
@@ -284,15 +293,12 @@ public:
 
 			Vector3f result;
 
-
-
 			for(int i=0; i<3; i++) 
 				result(i,0) = tempResult(i,0);
 			
 			if(result(0,0) != result(0,0)) {
 
 				result = x;
-
 
 			}
 
