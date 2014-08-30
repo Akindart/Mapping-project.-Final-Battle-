@@ -127,12 +127,14 @@ add_library (scan_virtualizer src/xtion_virtual_scans/scan_virtualizer.cpp)
 add_executable(xtion_virtual_scan src/xtion_virtual_scans/xtion_virtual_scan.cpp)
 add_executable(normals_generator src/normal_pack/normals_generator.cpp)
 add_executable(aligner src/align_pack/align_main.cpp)
+add_executable(map_drawer src/map_drawer/drawer_main.cpp)
 
 ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
 add_dependencies(xtion_virtual_scan least_squares_rp_project_generate_messages_cpp)
 add_dependencies(normals_generator least_squares_rp_project_generate_messages_cpp)
 add_dependencies(aligner least_squares_rp_project_generate_messages_cpp)
+add_dependencies(map_drawer least_squares_rp_project_generate_messages_cpp)
 
 
 target_link_libraries(scan_virtualizer
@@ -159,6 +161,14 @@ target_link_libraries(normals_generator
 )
 
 target_link_libraries(aligner
+   ${catkin_LIBRARIES}
+   ${OpenCV_LIBRARIES}
+   ${PCL_LIBRARIES} 
+   ${Eigen_LIBRARIES}
+   scan_virtualizer
+)
+
+target_link_libraries(map_drawer
    ${catkin_LIBRARIES}
    ${OpenCV_LIBRARIES}
    ${PCL_LIBRARIES} 

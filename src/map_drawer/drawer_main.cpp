@@ -8,13 +8,16 @@
 
 #include "least_squares_rp_project/normals_.h"
 
-#include "least_squares_rp_project/Utils.cpp"
+#include "least_squares_rp_project/pointAlignment.h"
 
-using namespace std;
+#include <Eigen/Dense>
+
+#define PI 3.14159265
+
 using namespace Eigen;
-using namespace Utils;
+using namespace std;
 
-void tempCB(){}
+void tempCB(const least_squares_rp_project::pointAlignment msg){}
 
 
 int main(int argc, char* argv[]){
