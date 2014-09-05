@@ -33,6 +33,28 @@ class Aligner{
 
 	listVec2f setEigenVec2;
 
+	listVec2fIterator findInVector(listVec2f *setToVerify, Vector2f vecToFind){
+
+		listVec2fIterator it;
+
+		for(it = setToVerify->begin(); it != setToVerify->end(); ++it){
+
+			if(*it == vecToFind){
+
+				/*cout << endl <<"[=====================" << endl;
+				cout << "| iterator: " << endl << *it << endl << "---------------------" << endl;
+				cout << "| Vector: " << endl << vecToFind << endl << "---------------------" << endl;
+				cout <<"|=====================]" << endl;*/
+				break;
+
+			} 
+
+		}
+
+		return it;
+
+	}
+
 	MatrixXf *extractPointInfo(const least_squares_rp_project::normals_ msg,  std::vector<float> *eingenValues, listVec2f *tempVecList){
 
 		eingenValues->clear();
@@ -79,7 +101,7 @@ class Aligner{
 			x1 = (*p_set1)(0, i);
 			y1 = (*p_set1)(1, i);
 
-			ROS_ERROR("set 1");
+			//ROS_ERROR("set 1");
 			
 			for(int j=0; j<p_set2->cols(); j++){
 
@@ -89,7 +111,7 @@ class Aligner{
 				x2 = (*p_set2)(0, j);
 				y2 = (*p_set2)(1, j);
 
-				ROS_ERROR("set 2");
+				//ROS_ERROR("set 2");
 
 				if(sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1)) < 0.3){
 
@@ -108,13 +130,13 @@ class Aligner{
 					}
 
 					//cout << "two possible equal points: (" << x1 << ", " << y1 << ") - " << "(" << x2<< ", " << y2 << ")" << endl;
-					cout << "j: " << j << " p_set2->cols(): " << p_set2->cols() << endl;
+					//cout << "j: " << j << " p_set2->cols(): " << p_set2->cols() << endl;
 				}
 
 			}
 
 
-			//it = std::find (usedVecs.begin(), usedVecs.end(), p_set2->col(posInVec));
+			it = findInVector(&usedVecs, p_set2->col(posInVec));
 
 
 			if(posInVec > -1 && posInVec < p_set2->cols() && it == usedVecs.end()){
@@ -172,13 +194,13 @@ class Aligner{
 					(*comparisonSet)(1, compSetCounter-1) = (*p_set1)(1, i);
 					//cout << "test9" << endl;
 					(*comparisonSet)(2, compSetCounter-1) = (*p_set2)(0, posInVec);
-					cout << "test10" << endl;
+					//cout << "test10" << endl;
 					(*comparisonSet)(3, compSetCounter-1) = (*p_set2)(1, posInVec);
 
 
 					usedVecs.push_back(Vector2f((*p_set2)(0, posInVec), (*p_set2)(1, posInVec)));  //<--the error is here
 
-					cout << usedVecs.at(usedVecs.size()-1) << endl;
+					//cout << usedVecs.at(usedVecs.size()-1) << endl;
 
 					//create the pair here!
 
@@ -304,7 +326,7 @@ public:
 
 			publishMessage(result, msg);
 
-			cout << "result: \n" << result << endl;
+			//cout << "result: \n" << result << endl;
 
 			
 
